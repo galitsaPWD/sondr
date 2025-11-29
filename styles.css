@@ -879,38 +879,59 @@ body.theme-night .poem-modal__close {
     flex-wrap: wrap;
     padding: 10px 12px;
     gap: 8px;
+    overflow: hidden;
+  }
+
+  .brand {
+    flex-shrink: 0;
+    min-width: 0;
   }
 
   .brand-name {
     font-size: 1.1rem;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
   }
 
   .nav {
     order: 3;
     width: 100%;
     justify-content: center;
-    gap: 4px;
+    gap: 3px;
     margin-top: 4px;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
 
   .nav-link {
-    font-size: 0.75rem;
-    padding: 8px 10px;
+    font-size: 0.7rem;
+    padding: 8px 8px;
     min-height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    min-width: 0;
+    letter-spacing: 0.12em;
   }
 
   .header-actions {
     gap: 4px;
+    flex-shrink: 0;
   }
 
   .random-btn {
-    font-size: 0.7rem;
-    padding: 8px 12px;
+    font-size: 0.65rem;
+    padding: 8px 10px;
     min-height: 36px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
   }
 
   .mode-toggle {
@@ -1039,17 +1060,21 @@ body.theme-night .poem-modal__close {
   }
 
   .brand-name {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    max-width: 100px;
   }
 
   .nav-link {
-    font-size: 0.7rem;
-    padding: 6px 8px;
+    font-size: 0.65rem;
+    padding: 6px 6px;
+    letter-spacing: 0.1em;
   }
 
   .random-btn {
-    font-size: 0.65rem;
-    padding: 6px 10px;
+    font-size: 0.6rem;
+    padding: 6px 8px;
+    max-width: 90px;
   }
 
   .hero-title {
