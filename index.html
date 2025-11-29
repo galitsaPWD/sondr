@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>sonder. – poetry portfolio</title>
+    <meta
+      name="description"
+      content="sonder. – a warm, nostalgic poetry portfolio. words i write when the world gets too loud."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- film grain / noise overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark">●</span>
+          <span class="brand-name">sonder.</span>
+        </div>
+
+        <nav class="nav">
+          <button class="nav-link is-active" data-target="home">home</button>
+          <button class="nav-link" data-target="poems">poems</button>
+          <button class="nav-link" data-target="about">about</button>
+        </nav>
+
+        <div class="header-actions">
+          <button class="random-btn" id="randomPoemButton">
+            random poem
+          </button>
+          <button
+            class="mode-toggle"
+            id="modeToggle"
+            aria-label="Toggle warm night mode"
+          >
+            <span class="mode-pill">
+              <span class="mode-icon mode-icon--sun">☼</span>
+              <span class="mode-icon mode-icon--moon">☽</span>
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <!-- Home -->
+        <section class="view view--active" id="homeView" data-view="home">
+          <div class="hero">
+            <div class="hero-copy">
+              <p class="hero-tagline">poetry at golden hour</p>
+              <h1 class="hero-title">sonder.</h1>
+              <p class="hero-subtitle">
+                words i write about her that i can't speak out loud.
+              </p>
+            </div>
+            <div class="hero-panel">
+              <div class="hero-gradient"></div>
+              <p class="hero-note">
+                soft fragments.
+                <br>
+                 quiet universes.
+                 <br>
+                  verses held between
+                sunlight and sleep.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Poems -->
+        <section class="view" id="poemsView" data-view="poems">
+          <header class="section-header">
+            <h2 class="section-title">poems</h2>
+            <p class="section-subtitle">
+              small universes, arranged in lines.
+            </p>
+          </header>
+          <div class="poems-grid" id="poemsGrid">
+            <!-- poem cards injected by script.js -->
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="view" id="aboutView" data-view="about">
+          <header class="section-header">
+            <h2 class="section-title">about</h2>
+          </header>
+          <div class="about-body">
+            <p class="about-line">
+              i write to make sense of what i feel.
+            </p>
+            <p class="about-line">
+              sonder (n.) the quiet realization that everyone carries a universe
+              within them.
+            </p>
+            <p class="about-note">
+              this is a small window into mine—soft-spoken, dusk-colored,
+              always almost saying what it means.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-left">
+          <span class="footer-text">sonder © 2025</span>
+          <span class="footer-dedication">for you, isha <br> always.</span>
+        </div>
+        <div class="footer-icons" aria-hidden="true">
+          <span class="footer-icon footer-icon--dot"></span>
+          <span class="footer-icon footer-icon--line"></span>
+          <span class="footer-icon footer-icon--dot"></span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Minimalist poem modal -->
+    <div class="poem-modal" id="poemModal" aria-hidden="true">
+      <div class="poem-modal__backdrop" id="poemModalBackdrop"></div>
+      <article class="poem-modal__content" role="dialog" aria-modal="true">
+        <button
+          class="poem-modal__close"
+          id="poemModalClose"
+          aria-label="Close poem"
+        >
+          ✕
+        </button>
+        <h3 class="poem-modal__title" id="poemModalTitle"></h3>
+        <p class="poem-modal__meta" id="poemModalMeta"></p>
+        <div class="poem-modal__body" id="poemModalBody"></div>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
