@@ -236,7 +236,7 @@ when someone finally feels like home.`,
   },
   {
     id: "i-admired-her",
-    title: "i admired her",
+    title: "admiring her",
     meta: "admiration | real love",
     firstLine: "i admired her long before i understood why.",
     body: `i admired her long before i understood why.
