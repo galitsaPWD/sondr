@@ -828,22 +828,38 @@ body.theme-night .poem-modal__content {
 }
 
 .poem-modal__close {
-  position: absolute;
+  position: sticky;
   top: 16px;
-  right: 18px;
+  float: right;
   border-radius: 999px;
   border: none;
-  padding: 4px 8px;
+  padding: 6px 10px;
   font-size: 0.85rem;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   color: #4b3023;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  margin-bottom: -36px;
+  margin-left: auto;
+  display: block;
+  width: fit-content;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  backdrop-filter: blur(8px);
+}
+
+.poem-modal__close:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: scale(1.05);
 }
 
 body.theme-night .poem-modal__close {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.65);
   color: var(--accent);
+}
+
+body.theme-night .poem-modal__close:hover {
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .poem-modal__title {
@@ -1028,11 +1044,11 @@ body.theme-night .poem-modal__close {
 
   .poem-modal__close {
     top: 12px;
-    right: 14px;
     padding: 6px 10px;
     min-width: 36px;
     min-height: 36px;
     font-size: 0.9rem;
+    margin-bottom: -32px;
   }
 
   .poem-modal__title {
