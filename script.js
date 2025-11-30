@@ -5,7 +5,7 @@
 const poems = [
   {
     id: "i-still-remember-that-night",
-    title: "i still remember that night",
+    title: "that night",
     meta: "confession | longing",
     firstLine:
       "i still remember that night that even in the darkness i still see ur smile so bright",
@@ -47,7 +47,7 @@ i never felt this way before, but with u
   },
   {
     id: "dark-moon",
-    title: "dark moon",
+    title: "constellations of you",
     meta: "night | tenderness",
     firstLine: "oh, how dark is the moon compared to your light;",
     body: `oh, how dark is the moon
@@ -88,7 +88,7 @@ then mine always seems to fit your silhouette.`,
   },
   {
     id: "if-loving-you-was-a-mistake",
-    title: "if loving you was a mistake",
+    title: "the mistake i'd make again",
     meta: "love | almost",
     firstLine: "if loving you was a mistake, then why’s it the only thing i ever got right?",
     body: `if loving you was a mistake,
@@ -123,7 +123,7 @@ as you.`,
   },
   {
     id: "cant-get-over-you",
-    title: "can't get over you",
+    title: "a question",
     meta: "crush | memory",
     firstLine: "your face still lingers, even when i close my eyes at night.",
     body: `your face still lingers,
@@ -144,7 +144,7 @@ i love to think about.`,
   },
   {
     id: "simple-touch",
-    title: "a simple touch",
+    title: "coming home",
     meta: "hands | home",
     firstLine: "i didn't know a simple touch could feel like a confession.",
     body: `i didn't know a simple touch could feel like a confession.
@@ -196,7 +196,7 @@ but rebuilds.`,
   },
   {
     id: "love-today",
-    title: "love, today",
+    title: "breathing easier",
     meta: "modern love | softness",
     firstLine: "love today feels complicated — the situationships,",
     body: `love today feels complicated —
@@ -236,7 +236,7 @@ when someone finally feels like home.`,
   },
   {
     id: "i-admired-her",
-    title: "admiring her",
+    title: "admiring her, always",
     meta: "admiration | real love",
     firstLine: "i admired her long before i understood why.",
     body: `i admired her long before i understood why.
@@ -284,7 +284,7 @@ and in the ways she doesn’t.`,
   },
   {
     id: "her-eyes",
-    title: "her eyes",
+    title: "when the world goes quiet",
     meta: "eyes | gravity",
     firstLine:
       "her eyes were the first thing that ever made the world go quiet —",
@@ -326,7 +326,7 @@ they found me.`,
   },
   {
     id: "blue-skies-bedrock",
-    title: "blue skies & bedrock",
+    title: "daydreams of us",
     meta: "daydream | future",
     firstLine: "blue skies and bedrock, truth and bullocks.",
     body: `blue skies and bedrock,
@@ -350,7 +350,7 @@ but i hope one day it'll be the end.`,
   },
   {
     id: "i-love-long-quiet-nights",
-    title: "i love long quiet nights",
+    title: "icarus",
     meta: "longing | admiration",
     firstLine: "i love long quiet nights, but i wish you could tell me goodnight.",
     body: `i love long quiet nights,  
@@ -385,7 +385,7 @@ in your gentle light.`,
   },
   {
     id: "tell-me-your-flaws",
-    title: "tell me your flaws",
+    title: "learning you",
     meta: "acceptance | love",
     firstLine: "tell me your flaws— not the cute ones you joke about,",
     body: `tell me your flaws—
@@ -478,7 +478,7 @@ every single time.`,
   },
   {
     id: "ive-walked-through-gardens",
-    title: "i've walked through gardens",
+    title: "a single tulip",
     meta: "devotion | choice",
     firstLine: "i've walked through gardens so loud with color they almost felt alive,",
     body: `i've walked through gardens
