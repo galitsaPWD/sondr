@@ -348,6 +348,189 @@ with our son or daughter.
 i know this is all in my head,
 but i hope one day it'll be the end.`,
   },
+  {
+    id: "i-love-long-quiet-nights",
+    title: "i love long quiet nights",
+    meta: "longing | admiration",
+    firstLine: "i love long quiet nights, but i wish you could tell me goodnight.",
+    body: `i love long quiet nights,  
+but i wish you could tell me goodnight.  
+
+your small words and actions  
+speak loudly in my mind.
+
+every movement of your soul  
+brings light to my desolate life.  
+your eyes speak truths  
+even the deaf could understand.
+
+i admire you in everything you do—  
+dancing, combing your hair,  
+sitting quietly,  
+or simply being beside me.
+
+i realized i didn't like you  
+in the ways the others did.  
+i never cared about who you were
+or what the world thought of you.
+
+what i liked was your soul—  
+warm like the sun,  
+and i'm icarus, falling happily.
+
+it burns,  
+but i'd gladly bear the fire  
+if it meant i could stay  
+in your gentle light.`,
+  },
+  {
+    id: "tell-me-your-flaws",
+    title: "tell me your flaws",
+    meta: "acceptance | love",
+    firstLine: "tell me your flaws— not the cute ones you joke about,",
+    body: `tell me your flaws—
+
+not the cute ones you joke about,
+
+but the ones you think would make someone look away,
+
+the ones you hide because you've always had to be strong.
+
+tell me the worries that sit heavy on your chest,
+
+the mistakes you replay when the world goes quiet,
+
+the things people misunderstood
+
+that made you fold yourself smaller than you really are.
+
+show me the cracks beneath your laughter,
+
+the tremble in your hands
+
+when life gets loud,
+
+the way you turn your face
+
+when you're fighting tears you won't let fall.
+
+i don't want the perfect version of you—
+
+i want the honest one,
+
+the one who feels deeply,
+
+who gives too much,
+
+who loves quietly but fiercely.
+
+the girl who overthinks,
+
+who hides her pain behind a smile,
+
+who forgets her worth
+
+because she's too busy carrying everyone else.
+
+none of that scares me.
+
+none of that pushes me away.
+
+every flaw you fear
+
+is just another place where your light slips through,
+
+another part of you I want to understand,
+
+slowly, patiently, gently.
+
+you're not "too much,"
+
+you're not "hard to handle,"
+
+you're not "difficult to love."
+
+you're human—
+
+raw, brilliant, soft at the center
+
+even when you pretend you're made of stone.
+
+and if you ever choose to trust me
+
+with the pieces you hide,
+
+i'll hold them steady,
+
+not to fix you,
+
+but to learn you.
+
+so tell me your flaws.
+
+not all at once—
+
+just one at a time.
+
+i'll meet you where you are,
+
+every single time.`,
+  },
+  {
+    id: "ive-walked-through-gardens",
+    title: "i've walked through gardens",
+    meta: "devotion | choice",
+    firstLine: "i've walked through gardens so loud with color they almost felt alive,",
+    body: `i've walked through gardens
+
+so loud with color they almost felt alive,
+
+rows and rows of perfect blossoms
+
+reaching for anyone who bothered to look.
+
+but beauty gets lonely
+
+when it isn't the one you're searching for.
+
+and somewhere along the way,
+
+i realized I wasn't looking for a garden at all—
+
+just a single tulip,
+
+quiet and sure in its own softness.
+
+strange thing, really —
+
+how one flower can change the meaning
+
+of an entire field.
+
+because every time I pass by a bloom now,
+
+my heart does this little turn,
+
+hoping—
+
+just hoping—
+
+for the shape of you.
+
+and even if the world handed me
+
+an endless meadow of petals,
+
+all bright, all flawless,
+
+it wouldn't matter.
+
+what use is a whole garden
+
+if the one flower I'd choose
+
+is nowhere in it?`,
+  },
 ];
 
 // --------
