@@ -98,6 +98,20 @@ button,
   touch-action: manipulation;
 }
 
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+
+  .view,
+  .poem-card,
+  .poem-modal__content {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 /* --------
    Global scrollbar styling (main page + poem modal)
 --------- */
