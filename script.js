@@ -318,6 +318,7 @@ and never want to turn away.
 i think that’s why they stay with me.
 because her eyes aren’t just something to admire —
 they’re something to return to.
+
 and even years from now,
 when time has softened everything else,
 i know i’ll remember them
@@ -479,6 +480,121 @@ it wouldn't matter.
 what use is a whole garden
 if the one flower i'd choose
 is nowhere in it?`,
+  },
+  {
+    id: "teach-me-your-favorites",
+    title: "teach me your favorite things",
+    meta: "knowing you | tenderness",
+    firstLine:
+      "teach me your favorite things — the way you love coca-cola and matcha,",
+    body: `teach me your favorite things —
+the way you love coca-cola and matcha,
+how your whole brain shakes when you have to choose,
+how you can finish a pack of gummy sweets
+without even thinking.
+
+tell me about your dream cities —
+New York, Tokyo —
+places loud enough
+to hold a quiet heart like yours.
+or just a quiet country — 
+like Switzerland.
+
+i don’t just like you.
+i want to know you.
+
+tell me about wrestling,
+your hobbies,
+the things you love but never talk about
+because you think they’re stupid or small.
+
+i want to know your soul,
+not just the shell you show the world.
+
+teach me your favorite things —
+your love for tulips,
+your colors of black, white, and beige,
+your soft spot for cinderella,
+your obsession with buttered shrimp, fries,
+and yes — even balut.
+
+but most of all,
+teach me you.
+
+the parts you hide,
+the pieces you think no one will understand,
+the version of you that feels too fragile to show.
+
+i will understand.
+i want to learn you —
+the good, the messy, the soft, the difficult.
+
+because loving someone
+means loving the flaws too —
+the ones they try to tuck away.
+
+and i love you as you are.
+all of you.`,
+  },
+  {
+    id: "let-me-love-you-there",
+    title: "love you in the quiet places",
+    meta: "acceptance | devotion",
+    firstLine: "let me love you in the places you don’t show anyone.",
+    body: `let me love you in the places you don’t show anyone.
+
+the flaws you hide when the world feels too sharp,
+the worries you swallow because you think
+no one could ever understand them.
+
+come closer —
+tell me the things you think make you unlovable,
+the habits you’re scared will push someone away,
+the fears that sit quietly in the corners of your heart.
+i won’t look at you differently.
+i’ll love you deeper for them.
+
+i want to know the way your voice softens
+when you admit you’re tired,
+how your hands shake a little
+when you feel overwhelmed,
+how you pretend you’re fine
+when your eyes are begging someone to notice you’re not.
+
+let me see the parts of you
+you’ve learned to hide —
+not to fix them,
+but to hold them
+like something precious.
+
+because every flaw you fear
+is a place i want to rest my hands,
+every crack you hide
+is a doorway into something real and beautiful and you.
+
+i don’t want the polished version,
+the practiced smiles,
+the brave face you show the world.
+i want the girl who loves too much,
+who feels too deeply,
+who thinks she’s “hard to understand”
+when she’s actually the easiest person in the world to love.
+
+so tell me your flaws —
+slowly, softly, one by one.
+i’ll meet you where you are,
+i’ll stay as long as you let me,
+and i’ll love you not despite those pieces
+but because they’re yours.
+
+and if there’s anything you can’t say yet,
+that’s okay.
+i’ll wait.
+loving you was never something
+i wanted to rush —
+it’s something i wanted to grow into
+gently, completely,
+in every corner of who you are.`,
   },
 ];
 
