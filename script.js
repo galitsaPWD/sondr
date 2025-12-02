@@ -385,11 +385,11 @@ if it meant i could stay
 in your gentle light.`,
   },
   {
-    id: "tell-me-your-flaws",
-    title: "learning you",
-    meta: "acceptance | love",
-    firstLine: "tell me your flaws— not the cute ones you joke about,",
-    body: `tell me your flaws—
+      id: "tell-me-your-flaws",
+      title: "learning you",
+      meta: "acceptance | love",
+      firstLine: "tell me your flaws— not the cute ones you joke about,",
+      body: `tell me your flaws—
 not the cute ones you joke about,
 but the ones you think would make someone look away,
 the ones you hide because you've always had to be strong.
@@ -592,9 +592,278 @@ that’s okay.
 i’ll wait.
 loving you was never something
 i wanted to rush —
-it’s something i wanted to grow into
+it's something i wanted to grow into
 gently, completely,
 in every corner of who you are.`,
+  },
+  {
+    id: "burnt-cigarette",
+    title: "burnt cigarette",
+    meta: "devotion | intensity",
+    firstLine: "i know what I'm holding between my fingers might be the end of me —",
+    body: `i know what I'm holding between my fingers
+might be the end of me —
+but some endings are worth the smoke.
+
+you remind me of a cigarette:
+soft at first,
+then heavy,
+then impossible to let go of
+even when it begins to hurt.
+
+if you let me,
+i'd learn how your wounds breathe —
+not to fix them,
+but to understand the language of your ache.
+every scar, every silence,
+i'd memorize like scripture.
+
+show me the parts you hide —
+the ones you think are too sharp to touch.
+i'll take them in my hands,
+bleeding if i have to,
+just to prove your edges
+are worth knowing.
+
+they call it foolish
+to love something that can kill you.
+but if your love is poison,
+i'll sip slow,
+let it move through my veins
+until I'm nothing but the warmth you left behind.
+
+i never wanted perfection —
+i wanted you.
+raw. 
+trembling.
+
+a human who breaks
+and still dares to try again.
+
+so if this burns me down,
+then let it.
+some fires
+are worth dying in.`,
+  },
+  {
+    id: "in-the-most-selfish-way",
+    title: "in the most selfish way possible",
+    meta: "longing | possessiveness",
+    firstLine: "i know i don't own you, and i know i have no right",
+    body: `i know i don't own you,
+and i know i have no right
+to feel this twist in my chest
+every time someone else
+makes you smile.
+
+but God,
+in the most selfish way possible,
+i hope no one sees you
+the way i do —
+the way you glow
+when you're trying not to laugh,
+the way your eyes soften
+when you're comfortable,
+the way you rest your hand
+on your cheek when you're shy.
+
+i hope no one notices
+how gentle your voice gets
+when you talk about the things you love,
+or how your whole face brightens
+when you finally feel understood.
+
+because the truth is,
+i don't want to share that version of you.
+the quiet one,
+the real one,
+the one you only show
+when you feel safe.
+
+i know it's selfish —
+i'm painfully aware.
+but i hope,
+just for once,
+the world looks away
+so i can admire you
+in peace.
+
+not because you owe me anything,
+but because loving you,
+even from a distance,
+feels like the only thing
+i ever wanted to do right.
+
+so in the most selfish way possible —
+i hope no one admires you
+the way i do.`,
+  },
+  {
+    id: "find-me",
+    title: "find me",
+    meta: "support | safety",
+    firstLine: "find me when the world gets too loud —",
+    body: `find me when the world gets too loud —
+when your family cuts too deep,
+when your friends forget how to stay,
+when you feel yourself slipping
+under the weight of things you never say out loud.
+
+find me when your chest feels tight
+for reasons you can't explain,
+when you're tired of pretending you're fine,
+tired of being the strong one,
+tired of holding yourself together
+while no one notices you're breaking.
+
+you don't have to be okay for me.
+you don't have to smile.
+you don't have to talk.
+just find me.
+
+i won't promise to fix the world for you —
+but i promise you won't face it alone.
+i'll sit with you in the dark,
+i'll hold the silence with you,
+and when you forget your own light,
+
+i'll remind you where it still burns.
+
+you're never a burden.
+not to me.
+not ever.
+
+so when everything feels too heavy,
+come find me.
+i'll stay.`,
+  },
+  {
+    id: "a-melody",
+    title: "a melody",
+    meta: "beauty | music",
+    firstLine: "i used to think music was the closest thing i'd ever get to magic —",
+    body: `i used to think music was the closest thing
+i'd ever get to magic —
+the way it fills a room,
+the way it settles into you
+like it knows every quiet part of your heart.
+
+but then you smiled.
+
+and suddenly, every love song
+finally made sense.
+
+your smile feels like the warmest chorus,
+the softest bridge,
+the one part of the song
+i never want to end.
+
+it's the kind of beauty
+that doesn't just catch your attention —
+it pulls you in,
+holds you still,
+and makes the whole world sound different.
+
+i used to think music was my favorite thing.
+but the truth is,
+nothing has ever moved me
+the way your smile does —
+slow, gentle,
+and impossibly romantic.
+
+and if i could play anything,
+it would always —
+always be you.
+
+you're the only melody
+i never get tired of.`,
+  },
+  {
+    id: "i-felt-more-with-you",
+    title: "more with you",
+    meta: "love | depth",
+    firstLine: "i felt more with you in the few weeks we talked",
+    body: `i felt more with you
+in the few weeks we talked
+than i did in three years
+with someone who once held my heart.
+
+there’s something about you —
+the way you laugh,
+the way your mouth blabber
+when you talk about the things you love,
+the way you make even silence
+feel like a place i want to stay.
+
+with you, everything feels warmer.
+lighter.
+realer.
+
+you walked into my life quietly,
+like it was nothing,
+but somehow you lit up spaces in me
+i didn’t even realize had gone dim.
+
+and it’s crazy —
+how a few moments with you
+outweighed years
+of what i thought was love.
+
+how your presence,
+your softness,
+your soul
+made me feel things
+i didn’t even feel in years of loving someone else.
+
+you made me realize something:
+it’s not about how long you’ve known a person —
+it’s about how deeply they touch you
+in the moments they’re there.
+
+and you 
+in such a short time,
+you’ve moved me
+in ways i didn’t think were possible anymore.
+
+you made me feel more,
+love more,
+hope more.
+
+and God —
+i wouldn’t trade that for anything.`,
+  },
+  {
+    id: "ive-always-hated-my-smile",
+    title: "when i forget to hide",
+    meta: "self image | tenderness",
+    firstLine: "i’ve always hated my smile —",
+    body: `i’ve always hated my smile —
+the crooked teeth,
+the awkward tilt,
+the way i try not to show too much
+because i’m scared someone will notice
+what i notice every day.
+
+but with you —
+i forget to hide.
+
+you say something small,
+you laugh,
+you look at me with those soft eyes —
+and suddenly i’m smiling so wide
+my cheeks hurt.
+
+and for once,
+i don’t care how imperfect it looks.
+
+it’s strange, isn’t it?
+how someone can make you feel
+beautiful,
+in the places you always felt broken.
+
+i still hate my smile,
+but when i’m with you,
+i love the reason it exists.`,
   },
 ];
 
@@ -617,6 +886,25 @@ const poemModalClose = document.getElementById("poemModalClose");
 const poemModalTitle = document.getElementById("poemModalTitle");
 const poemModalMeta = document.getElementById("poemModalMeta");
 const poemModalBody = document.getElementById("poemModalBody");
+const poemModalContent = document.querySelector(".poem-modal__content");
+
+function resetPoemScroll() {
+  if (poemModalContent) {
+    poemModalContent.scrollTop = 0;
+    poemModalContent.scrollLeft = 0;
+    if (typeof poemModalContent.scrollTo === "function") {
+      poemModalContent.scrollTo(0, 0);
+    }
+  }
+  if (poemModalBody) {
+    poemModalBody.scrollTop = 0;
+    poemModalBody.scrollLeft = 0;
+  }
+  if (poemModal) {
+    poemModal.scrollTop = 0;
+    poemModal.scrollLeft = 0;
+  }
+}
 
 const randomPoemButton = document.getElementById("randomPoemButton");
 const modeToggle = document.getElementById("modeToggle");
@@ -681,12 +969,21 @@ function openPoem(id) {
   poemModal.classList.add("is-open");
   poemModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
+
+  // Reset scroll position after modal is visible/layout is updated
+  resetPoemScroll();
+  if (typeof requestAnimationFrame === "function") {
+    requestAnimationFrame(resetPoemScroll);
+  }
 }
 
 function closePoemModal() {
   poemModal.classList.remove("is-open");
   poemModal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
+
+  // Ensure modal scroll is reset after closing as well
+  resetPoemScroll();
 }
 
 poemModalClose.addEventListener("click", closePoemModal);

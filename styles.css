@@ -76,7 +76,6 @@ body {
 }
 
 html {
-  /* keep scrollbar space stable so header doesn't shift horizontally */
   overflow-y: scroll;
   scrollbar-gutter: stable;
 }
