@@ -385,11 +385,11 @@ if it meant i could stay
 in your gentle light.`,
   },
   {
-      id: "tell-me-your-flaws",
-      title: "learning you",
-      meta: "acceptance | love",
-      firstLine: "tell me your flaws— not the cute ones you joke about,",
-      body: `tell me your flaws—
+    id: "tell-me-your-flaws",
+    title: "learning you",
+    meta: "acceptance | love",
+    firstLine: "tell me your flaws— not the cute ones you joke about,",
+    body: `tell me your flaws—
 not the cute ones you joke about,
 but the ones you think would make someone look away,
 the ones you hide because you've always had to be strong.
@@ -863,7 +863,188 @@ in the places you always felt broken.
 
 i still hate my smile,
 but when i’m with you,
-i love the reason it exists.`,
+    i love the reason it exists.`,
+  },
+  {
+    id: "near-her-fire",
+    title: "near her fire",
+    meta: "admiration | freedom",
+    firstLine: "i don’t want to change her — not the way she laughs too loud,",
+    body: `i don’t want to change her —
+not the way she laughs too loud,
+or how she gets excited over the smallest things,
+or how she lights up a room
+without ever meaning to.
+
+i just want to be close enough
+to feel that warmth.
+
+she’s fire —
+not the kind you contain,
+but the kind you respect,
+the kind you watch in quiet awe
+because somehow it makes the world
+hurt a little less.
+
+i never wanted to dim her spark,
+never wanted her to shrink to fit beside me.
+all i ever wanted
+was a place near her light —
+to watch her grow,
+to root for her,
+to love every version she becomes.
+
+i love her as she is —
+soft, wild, glowing, burning —
+and maybe that’s enough.
+
+not to hold her,
+not to claim her,
+but simply
+to be near her fire.`,
+  },
+  {
+    id: "worth-knowing",
+    title: "worth knowing",
+    meta: "depth | reality",
+    firstLine: "everyone else noticed her beauty first — the pretty face, the charm,",
+    body: `everyone else noticed her beauty first —
+the pretty face, the charm,
+the kind of girl people want
+just so they can say they had her.
+
+but me?
+i noticed the quiet things —
+the tiredness behind her eyes,
+the weight she carries without telling anyone,
+the strength it takes for her
+to keep showing up
+even when life keeps testing her.
+
+i didn’t want her
+because she was hurting —
+i wanted her
+because she was real.
+because she feels deeply,
+loves quietly,
+and tries harder than anyone realizes.
+
+i didn’t want to fix her,
+or save her,
+or turn her pain into a reason to stay.
+i just wanted to be someone
+she could lean on without fear,
+a place that felt steady
+in a world that keeps shaking.
+
+i wanted to love her
+in a way she’d never have to question —
+soft, patient, honest.
+the kind that stays
+through her laughter and her silence,
+her confidence and her doubt.
+
+everyone else wanted the pretty girl.
+i wanted the whole person —
+the strong parts,
+the scared parts,
+the parts she hides,
+the parts she’s still learning to love.
+
+because she’s not just beautiful —
+she’s worth knowing.
+and that’s why i chose her.`,
+  },
+  {
+    id: "under-the-same-sun",
+    title: "under the same sun",
+    meta: "silent love | gratitude",
+    firstLine: "i look at her sometimes and it hits me —",
+    body: `i look at her sometimes
+and it hits me —
+how lucky the man she chooses someday
+is going to be.
+
+not because she’s pretty
+not just that,
+but because she loves with this softness
+that most people don’t even notice
+until it’s gone.
+
+and there i am —
+wanting her quietly,
+loving her carefully,
+never saying too much
+because she’s not mine to claim.
+
+i wish i could tell her
+how she makes my whole world slow down,
+how her smile sticks with me
+long after she’s gone,
+how being beside her
+feels like the closest thing to home
+i’ve ever felt.
+
+but for now,
+i just admire her from where i am —
+grateful i get to exist with her
+under the same sun,
+even if she’ll never be mine.`,
+  },
+  {
+    id: "everything-everywhere",
+    title: "everything, everywhere",
+    meta: "missing you | longing",
+    firstLine: "i miss her. i miss her genuine laughter,",
+    body: `i miss her.
+
+i miss her genuine laughter,
+a laugh i never thought
+that will be stuck in my head.
+
+i miss her soothing voice,
+it's as sweet as honey to my eardrums.
+miss her random topics,
+the way we laughed talking about it.
+
+i miss her comforting smile,
+it gives me peace i didn't know i wanted.
+i seek it every day and night,
+but i guess i can see it only on screen this time.
+
+most of all i miss her eyes,
+goddamn i can't put into words.
+it pulls me in a world, into somewhere.
+i don't even care where, 
+but i know if i was given a chance —
+i'll dive right in.
+
+i can write up a whole damn essay 
+just to talk about her eyes.
+the way they look at me,
+like they speak to me spiritually.
+
+i'll trade the whole world —
+if i can see those eyes every day
+of my entire life.
+
+i try to put it into words,
+but it lives beyond letters and drama.
+
+it's like a ray of sunshine
+shining in my window at noon,
+or the feeling of cold air 
+filling my lungs.
+
+i can't describe it well
+but i know —
+if her eyes can kill me,
+i'll gladly face death.
+
+i miss her,
+in everything.
+everywhere.
+all the time.`,
   },
 ];
 
@@ -1007,6 +1188,37 @@ function openRandomPoem() {
 }
 
 randomPoemButton.addEventListener("click", openRandomPoem);
+
+// --------
+// Music Modal
+// --------
+
+const musicModal = document.getElementById("musicModal");
+const musicModalBackdrop = document.getElementById("musicModalBackdrop");
+const musicModalClose = document.getElementById("musicModalClose");
+const musicBtn = document.getElementById("musicBtn");
+
+function openMusicModal() {
+  musicModal.classList.add("is-open");
+  musicModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeMusicModal() {
+  musicModal.classList.remove("is-open");
+  musicModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+musicBtn.addEventListener("click", openMusicModal);
+musicModalClose.addEventListener("click", closeMusicModal);
+musicModalBackdrop.addEventListener("click", closeMusicModal);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && musicModal.classList.contains("is-open")) {
+    closeMusicModal();
+  }
+});
 
 // --------
 // Warm night mode
