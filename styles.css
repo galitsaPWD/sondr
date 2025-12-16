@@ -1130,9 +1130,8 @@ body.theme-night .poem-modal__close:hover {
   }
 
   .poem-modal__content--music {
-    min-height: 500px;
-    height: 60vh;
-    /* flexible height */
+    min-height: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
