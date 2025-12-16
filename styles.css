@@ -874,25 +874,32 @@ body.theme-night .poem-modal__content {
 }
 
 .poem-modal__close {
-  position: absolute;
+  position: sticky;
+  float: right;
   top: 14px;
   right: 14px;
-  border-radius: 999px;
-  border: none;
-  padding: 6px 10px;
-  font-size: 0.85rem;
+  margin-left: auto;
+  margin-bottom: -32px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 1rem;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.9);
-  color: #4b3023;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  color: var(--text-muted);
   z-index: 10;
-  transition: background var(--transition-fast), transform var(--transition-fast);
-  backdrop-filter: blur(8px);
+  transition: all var(--transition-fast);
 }
 
 .poem-modal__close:hover {
-  background: rgba(255, 255, 255, 0.95);
-  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text-main);
+  transform: rotate(90deg);
 }
 
 body.theme-night .poem-modal__close {
@@ -934,70 +941,79 @@ body.theme-night .poem-modal__close:hover {
   }
 
   .site-header {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 12px 14px;
-    gap: 10px;
-    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand actions"
+      "nav nav";
+    padding: 12px 14px 10px;
+    gap: 12px 0;
+    border-radius: 24px;
+  }
+
+  body.theme-night .site-header {
+    /* No sticky override needed */
   }
 
   .brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-shrink: 0;
+    grid-area: brand;
+    justify-content: flex-start;
+    width: auto;
   }
 
   .brand-name {
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1em;
     white-space: nowrap;
   }
 
+  .header-actions {
+    grid-area: actions;
+    width: auto;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
   .nav {
+    grid-area: nav;
     order: 0;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     gap: 4px;
     margin: 0;
-    flex-wrap: nowrap;
+    border-top: 1px solid rgba(210, 157, 120, 0.25);
+    padding-top: 10px;
   }
 
   .nav-link {
-    font-size: 0.7rem;
-    padding: 8px 6px;
+    font-size: 0.8rem;
+    padding: 6px 16px;
     min-height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    flex: 1 1 0;
-    min-width: 0;
-    letter-spacing: 0.08em;
-  }
-
-  .header-actions {
-    width: 100%;
-    justify-content: center;
-    gap: 8px;
-    flex-shrink: 0;
+    letter-spacing: 0.1em;
   }
 
   .random-btn {
     font-size: 0.7rem;
-    padding: 8px 14px;
-    min-height: 38px;
+    padding: 6px 12px;
+    min-height: 34px;
     white-space: nowrap;
-    letter-spacing: 0.1em;
-    flex: 0 0 auto;
+    letter-spacing: 0.05em;
   }
 
   .mode-toggle {
-    min-width: 44px;
-    min-height: 38px;
+    min-width: 40px;
+    min-height: 34px;
+    /* Match random button height */
     padding: 4px;
-    flex-shrink: 0;
+  }
+
+  .music-btn {
+    width: 34px;
+    height: 34px;
   }
 
   .hero {
@@ -1078,24 +1094,46 @@ body.theme-night .poem-modal__close:hover {
   }
 
   .poem-modal__content {
-    width: calc(100% - 24px);
-    max-height: calc(100vh - 40px);
-    padding: 20px 18px 22px;
-    border-radius: 20px;
+    width: calc(100% - 40px);
+    max-height: 75vh;
+    min-height: 40vh;
+    padding: 24px 20px 26px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior: contain;
+  }
+
+  .poem-modal__content--music {
+    min-height: auto;
+    display: block;
   }
 
   .poem-modal__close {
-    top: 12px;
-    padding: 6px 10px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    margin-bottom: -36px;
+    /* overlapping title space */
+    margin-left: auto;
+    display: flex;
+    padding: 6px;
     min-width: 36px;
     min-height: 36px;
     font-size: 0.9rem;
-    margin-bottom: -32px;
+    background: rgba(255, 255, 255, 0.9);
+    /* slight opaque for visibility */
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+  }
+
+  body.theme-night .poem-modal__close {
+    background: rgba(23, 13, 10, 0.85);
   }
 
   .poem-modal__title {
     font-size: 1.3rem;
-    margin-top: 4px;
+    margin-top: 24px;
   }
 
   .poem-modal__meta {

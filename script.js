@@ -1150,6 +1150,7 @@ function openPoem(id) {
   poemModal.classList.add("is-open");
   poemModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
+  document.documentElement.style.overflow = "hidden";
 
   // Reset scroll position after modal is visible/layout is updated
   resetPoemScroll();
@@ -1159,9 +1160,13 @@ function openPoem(id) {
 }
 
 function closePoemModal() {
+  if (document.activeElement instanceof HTMLElement) {
+    document.activeElement.blur();
+  }
   poemModal.classList.remove("is-open");
   poemModal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
+  document.documentElement.style.overflow = "";
 
   // Ensure modal scroll is reset after closing as well
   resetPoemScroll();
@@ -1202,12 +1207,17 @@ function openMusicModal() {
   musicModal.classList.add("is-open");
   musicModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
+  document.documentElement.style.overflow = "hidden";
 }
 
 function closeMusicModal() {
+  if (document.activeElement instanceof HTMLElement) {
+    document.activeElement.blur();
+  }
   musicModal.classList.remove("is-open");
   musicModal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
+  document.documentElement.style.overflow = "";
 }
 
 musicBtn.addEventListener("click", openMusicModal);
