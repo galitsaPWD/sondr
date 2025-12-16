@@ -1105,8 +1105,26 @@ body.theme-night .poem-modal__close:hover {
   }
 
   .poem-modal__content--music {
-    min-height: auto;
-    display: block;
+    min-height: 500px;
+    height: 60vh;
+    /* flexible height */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .music-wrapper {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    min-height: 0;
+    /* allows flex child to shrink properly */
+  }
+
+  .music-wrapper iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+    flex: 1;
   }
 
   .poem-modal__close {
