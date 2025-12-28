@@ -195,6 +195,32 @@ body.theme-night .ambient-overlay {
   }
 }
 
+/* Cursor aura */
+.cursor-aura {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(255, 230, 200, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.6s ease;
+}
+
+body.theme-night .cursor-aura {
+  background: radial-gradient(circle, rgba(250, 200, 120, 0.08) 0%, transparent 70%);
+}
+
+@media (pointer: coarse) {
+  .cursor-aura {
+    display: none;
+  }
+}
+
 /* Overall page shell */
 
 .page {
@@ -245,7 +271,50 @@ body.theme-night .site-header {
   font-size: 10px;
   color: var(--accent-soft);
   transform: translateY(-1px);
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: default;
+  position: relative;
 }
+
+.brand-mark.pulsing {
+  animation: logoPulse 2.5s ease-in-out infinite;
+}
+
+.brand:hover .brand-mark {
+  color: var(--accent);
+  transform: translateY(-1px) scale(1.4);
+}
+
+@keyframes logoPulse {
+  0% {
+    transform: translateY(-1px) scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translateY(-1px) scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1px) scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 5px);
+  }
+
+  to {
+    opacity: 0.8;
+    transform: translate(-50%, 0);
+  }
+}
+
 
 body.theme-night .brand-mark {
   color: var(--accent);
@@ -326,40 +395,49 @@ body.theme-night .nav-link.is-active {
 }
 
 .random-btn {
-  border-radius: var(--radius-pill);
-  border: 1px solid rgba(210, 157, 120, 0.65);
-  background: linear-gradient(135deg,
-      rgba(244, 200, 152, 0.55),
-      rgba(238, 171, 122, 0.9));
-  box-shadow: 0 10px 24px rgba(176, 105, 64, 0.45);
-  color: #3f2614;
-  font-size: 0.78rem;
-  text-transform: lowercase;
-  letter-spacing: 0.16em;
-  padding: 7px 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(210, 157, 120, 0.4);
+  background: rgba(255, 248, 241, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: transform var(--transition-fast),
-    box-shadow var(--transition-fast), filter var(--transition-fast);
+  color: var(--accent-deep);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.random-btn__icon {
+  display: block;
+  font-size: 1rem;
+  color: var(--accent-deep);
+}
+
+.random-btn__text {
+  display: none;
 }
 
 body.theme-night .random-btn {
-  border-color: rgba(248, 208, 145, 0.7);
-  background: linear-gradient(135deg,
-      rgba(53, 30, 18, 0.95),
-      rgba(94, 54, 29, 0.98));
+  background: rgba(12, 6, 4, 0.9);
+  border-color: rgba(248, 208, 145, 0.5);
   color: var(--accent);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.9);
+}
+
+body.theme-night .random-btn__icon {
+  color: var(--accent);
 }
 
 .random-btn:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.04);
-  box-shadow: 0 14px 30px rgba(176, 105, 64, 0.62);
+  transform: scale(1.05);
+  background: var(--bg-soft);
+  border-color: var(--accent-soft);
 }
 
 .random-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 8px 16px rgba(176, 105, 64, 0.45);
+  transform: scale(0.98);
 }
 
 .mode-toggle {
@@ -995,7 +1073,7 @@ body.theme-night .poem-modal__close:hover {
 
 @media (max-width: 639px) {
   .page {
-    padding: 12px 10px 18px;
+    padding: 16px 14px 24px;
   }
 
   .site-header {
@@ -1004,13 +1082,9 @@ body.theme-night .poem-modal__close:hover {
     grid-template-areas:
       "brand actions"
       "nav nav";
-    padding: 12px 14px 10px;
-    gap: 12px 0;
+    padding: 14px 16px 12px;
+    gap: 14px 0;
     border-radius: 24px;
-  }
-
-  body.theme-night .site-header {
-    /* No sticky override needed */
   }
 
   .brand {
@@ -1020,8 +1094,8 @@ body.theme-night .poem-modal__close:hover {
   }
 
   .brand-name {
-    font-size: 1.1rem;
-    letter-spacing: 0.1em;
+    font-size: 1.15rem;
+    letter-spacing: 0.12em;
     white-space: nowrap;
   }
 
@@ -1029,7 +1103,7 @@ body.theme-night .poem-modal__close:hover {
     grid-area: actions;
     width: auto;
     justify-content: flex-end;
-    gap: 6px;
+    gap: 8px;
   }
 
   .nav {
@@ -1037,126 +1111,210 @@ body.theme-night .poem-modal__close:hover {
     order: 0;
     width: 100%;
     justify-content: center;
-    gap: 4px;
+    gap: 6px;
     margin: 0;
     border-top: 1px solid rgba(210, 157, 120, 0.25);
-    padding-top: 10px;
+    padding-top: 12px;
+  }
+
+  body.theme-night .nav {
+    border-top-color: rgba(248, 208, 145, 0.2);
   }
 
   .nav-link {
-    font-size: 0.8rem;
-    padding: 6px 16px;
-    min-height: 38px;
+    font-size: 0.82rem;
+    padding: 10px 18px;
+    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
   }
 
   .random-btn {
-    font-size: 0.7rem;
-    padding: 6px 12px;
-    min-height: 34px;
+    font-size: 0.72rem;
+    padding: 0;
+    min-height: 40px;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     white-space: nowrap;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
+    border-radius: 50%;
+    border: 1px solid rgba(210, 157, 120, 0.4);
+    background: rgba(255, 248, 241, 0.7);
+    box-shadow: none;
+  }
+
+  body.theme-night .random-btn {
+    background: rgba(12, 6, 4, 0.9);
+    border-color: rgba(248, 208, 145, 0.5);
+    box-shadow: none;
+  }
+
+  .random-btn:hover {
+    transform: scale(1.05);
+    background: var(--bg-soft);
+    border-color: var(--accent-soft);
+    box-shadow: none;
+    filter: none;
+  }
+
+  .random-btn:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+
+  .random-btn__icon {
+    font-size: 1.1rem;
+    display: block;
+    color: var(--accent-deep);
+  }
+
+  body.theme-night .random-btn__icon {
+    color: var(--accent);
+  }
+
+  .random-btn__text {
+    display: none;
   }
 
   .mode-toggle {
-    min-width: 40px;
-    min-height: 34px;
-    /* Match random button height */
-    padding: 4px;
+    min-width: 44px;
+    min-height: 40px;
+    padding: 5px;
   }
 
   .music-btn {
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
   }
 
   .hero {
-    padding: 20px 16px 22px;
+    padding: 24px 18px 26px;
+    border-radius: 24px;
+  }
+
+  .hero-tagline {
+    font-size: 0.72rem;
+    margin-bottom: 12px;
   }
 
   .hero-title {
-    font-size: clamp(2.5rem, 12vw, 3.5rem);
-    margin-bottom: 8px;
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
+    margin-bottom: 10px;
+    letter-spacing: 0.14em;
   }
 
   .hero-subtitle {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .hero-panel {
-    margin-top: 16px;
-    padding: 12px 12px 14px;
+    margin-top: 18px;
+    padding: 16px 14px 18px;
+    border-radius: 18px;
   }
 
   .hero-note {
-    font-size: 0.82rem;
-    line-height: 1.6;
+    font-size: 0.86rem;
+    line-height: 1.7;
   }
 
   .section-header {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    margin-left: 4px;
   }
 
   .section-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.18em;
   }
 
   .section-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
+  }
+
+  .poems-grid {
+    gap: 16px;
   }
 
   .poem-card {
-    padding: 12px 12px 10px;
+    padding: 16px 14px 14px;
+    border-radius: 16px;
+    min-height: 44px;
   }
 
   .poem-card__title {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
   }
 
   .poem-card__meta {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
+    margin-bottom: 8px;
   }
 
   .poem-card__firstline {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-top: 6px;
+  }
+
+  /* Always show first line on mobile for better preview */
+  .poem-card__firstline {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+
+  .poem-card:active .poem-card__firstline {
+    opacity: 1;
   }
 
   .about-body {
-    padding: 16px 16px 18px;
+    padding: 20px 18px 22px;
+    border-radius: 18px;
   }
 
   .about-line {
-    font-size: 0.92rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 
   .about-note {
-    font-size: 0.8rem;
-    line-height: 1.6;
+    font-size: 0.84rem;
+    line-height: 1.7;
+    margin-top: 18px;
   }
 
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
-    padding-top: 10px;
+    gap: 10px;
+    padding-top: 12px;
+    font-size: 0.75rem;
   }
 
   .footer-left {
     width: 100%;
   }
 
+  .footer-dedication {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
   .poem-modal__content {
-    width: calc(100% - 40px);
-    max-height: 75vh;
-    min-height: 40vh;
-    padding: 24px 20px 26px;
-    border-radius: 22px;
+    width: calc(100% - 32px);
+    max-height: 80vh;
+    padding: 28px 22px 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     overscroll-behavior: contain;
@@ -1165,82 +1323,126 @@ body.theme-night .poem-modal__close:hover {
   .poem-modal__content--music {
     min-height: auto;
     height: auto;
+    max-height: 85vh;
     display: flex;
     flex-direction: column;
+    padding: 26px 20px 28px;
   }
 
   .poem-modal__close {
     position: sticky;
     top: 0;
     right: 0;
-    margin-bottom: -36px;
-    /* overlapping title space */
+    margin-bottom: -40px;
     margin-left: auto;
     display: flex;
-    padding: 6px;
-    min-width: 36px;
-    min-height: 36px;
-    font-size: 0.9rem;
-    background: rgba(255, 255, 255, 0.9);
-    /* slight opaque for visibility */
-    backdrop-filter: blur(4px);
+    padding: 0;
+    min-width: 44px;
+    min-height: 44px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
     border-radius: 50%;
+    z-index: 100;
   }
 
   body.theme-night .poem-modal__close {
-    background: rgba(23, 13, 10, 0.85);
+    background: rgba(23, 13, 10, 0.9);
+    border: 1px solid rgba(248, 208, 145, 0.3);
   }
 
   .poem-modal__title {
-    font-size: 1.3rem;
-    margin-top: 24px;
+    font-size: 1.4rem;
+    margin-top: 28px;
+    line-height: 1.3;
   }
 
   .poem-modal__meta {
-    font-size: 0.75rem;
-    margin-bottom: 16px;
+    font-size: 0.76rem;
+    margin-bottom: 18px;
+    letter-spacing: 0.14em;
   }
 
   .poem-modal__body {
-    font-size: 0.9rem;
-    line-height: 1.8;
+    font-size: 0.93rem;
+    line-height: 1.85;
+  }
+
+  /* Improve music modal on mobile */
+  .music-wrapper {
+    min-height: 380px;
+    margin-top: 20px !important;
   }
 }
 
 /* Very small screens (phones in portrait) */
 @media (max-width: 374px) {
   .page {
-    padding: 12px 10px 18px;
+    padding: 14px 12px 20px;
   }
 
   .site-header {
-    padding: 10px 12px;
-    gap: 8px;
+    padding: 12px 14px;
+    gap: 10px;
   }
 
   .brand-name {
-    font-size: 0.9rem;
-    letter-spacing: 0.08em;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
   }
 
   .nav-link {
-    font-size: 0.65rem;
-    padding: 7px 4px;
-    letter-spacing: 0.06em;
+    font-size: 0.75rem;
+    padding: 9px 12px;
+    letter-spacing: 0.08em;
+    min-height: 44px;
   }
 
   .random-btn {
-    font-size: 0.65rem;
-    padding: 7px 12px;
-    letter-spacing: 0.08em;
+    font-size: 0.68rem;
+    padding: 0;
+    min-height: 38px;
+    min-width: 38px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+  }
+
+  .random-btn__icon {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 20px 16px 22px;
   }
 
   .hero-title {
-    font-size: clamp(2rem, 14vw, 2.8rem);
+    font-size: clamp(2.4rem, 14vw, 3.2rem);
+    letter-spacing: 0.12em;
   }
 
   .hero-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .poem-card {
+    padding: 14px 12px 12px;
+  }
+
+  .poem-modal__content {
+    width: calc(100% - 24px);
+    padding: 24px 18px 26px;
+  }
+
+  .poem-modal__title {
+    font-size: 1.25rem;
+  }
+
+  .poem-modal__body {
+    font-size: 0.88rem;
   }
 }
 

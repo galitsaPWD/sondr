@@ -1090,6 +1090,10 @@ function resetPoemScroll() {
 const randomPoemButton = document.getElementById("randomPoemButton");
 const modeToggle = document.getElementById("modeToggle");
 
+const cursorAura = document.getElementById("cursorAura");
+const brandMark = document.getElementById("brandMark");
+const heroSubtitle = document.querySelector(".hero-subtitle");
+
 // --------
 // Navigation
 // --------
@@ -1259,10 +1263,86 @@ function toggleTheme() {
 modeToggle.addEventListener("click", toggleTheme);
 
 // --------
+// Magic Details
+// --------
+
+// 1. Cursor Aura
+function initCursorAura() {
+  if (!cursorAura) return;
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let currentX = 0;
+  let currentY = 0;
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursorAura.style.opacity = "1";
+  });
+
+  document.addEventListener("mouseleave", () => {
+    cursorAura.style.opacity = "0";
+  });
+
+  function update() {
+    currentX += (mouseX - currentX) * 0.15;
+    currentY += (mouseY - currentY) * 0.15;
+    cursorAura.style.transform = `translate(${currentX}px, ${currentY}px) translate(-50%, -50%)`;
+    requestAnimationFrame(update);
+  }
+  update();
+}
+
+// 2. Heartbeat Logo transition
+function initBrandMark() {
+  if (!brandMark) return;
+
+  let hoverTimer;
+  const originalMark = brandMark.textContent;
+
+  brandMark.parentElement.addEventListener("mouseenter", () => {
+    hoverTimer = setTimeout(() => {
+      brandMark.textContent = "♥";
+    }, 2000);
+  });
+
+  brandMark.parentElement.addEventListener("mouseleave", () => {
+    clearTimeout(hoverTimer);
+    brandMark.textContent = originalMark;
+  });
+}
+
+// 3. Living Verse Typing Effect
+function initTypingEffect() {
+  if (!heroSubtitle) return;
+
+  const text = heroSubtitle.textContent.trim();
+  heroSubtitle.textContent = "";
+
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      heroSubtitle.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 50);
+    }
+  }
+
+  // Start typing after a small delay
+  setTimeout(type, 1000);
+}
+
+// --------
 // Init
 // --------
 
 document.addEventListener("DOMContentLoaded", () => {
   applyStoredTheme();
   renderPoems();
+
+  // Magic Details
+  initCursorAura();
+  initBrandMark();
+  initTypingEffect();
 });

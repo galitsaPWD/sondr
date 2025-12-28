@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>sondr. – poetry portfolio</title>
-  <meta name="description" content="sonder. – a sea of words for her" />
+  <meta name="description" content="a sea of words for her" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,11 +19,12 @@
   <!-- film grain / noise overlay -->
   <div class="grain-overlay" aria-hidden="true"></div>
   <div class="ambient-overlay" aria-hidden="true"></div>
+  <div class="cursor-aura" id="cursorAura" aria-hidden="true"></div>
 
   <div class="page">
     <header class="site-header">
       <div class="brand">
-        <span class="brand-mark">●</span>
+        <span class="brand-mark pulsing" id="brandMark">●</span>
         <span class="brand-name">sondr.</span>
       </div>
 
@@ -35,16 +36,17 @@
 
       <div class="header-actions">
         <button class="random-btn" id="randomPoemButton">
-          random poem
+          <span class="random-btn__icon">⟳</span>
+          <span class="random-btn__text">random poem</span>
+        </button>
+        <button class="music-btn" id="musicBtn" aria-label="Open music">
+          ♫
         </button>
         <button class="mode-toggle" id="modeToggle" aria-label="Toggle warm night mode">
           <span class="mode-pill">
             <span class="mode-icon mode-icon--sun">☼</span>
             <span class="mode-icon mode-icon--moon">☽</span>
           </span>
-        </button>
-        <button class="music-btn" id="musicBtn" aria-label="Open music">
-          ♫
         </button>
       </div>
     </header>
@@ -54,7 +56,7 @@
       <section class="view view--active" id="homeView" data-view="home">
         <div class="hero">
           <div class="hero-copy">
-            <p class="hero-tagline">poetry at golden hour</p>
+            <p class="hero-tagline">a sea of words for her</p>
             <h1 class="hero-title">sondr.</h1>
             <p class="hero-subtitle">
               words i write about her that i can't speak out loud.
@@ -94,15 +96,13 @@
         </header>
         <div class="about-body">
           <p class="about-line">
-            i write to make sense of what i feel.
+            this isn't just a website. it's a sanctuary for everything i can't find the courage to say.
           </p>
           <p class="about-line">
-            sonder (n.) the quiet realization that everyone carries a universe
-            within them.
+            sonder (n.) the realization that every person carries a universe.
           </p>
           <p class="about-note">
-            this is a small window into mine—soft-spoken, dusk-colored,
-            always almost saying what it means.
+            this is how i see you — soft, radiant, and worth every word. you are the reason these verses exist.
           </p>
         </div>
       </section>
