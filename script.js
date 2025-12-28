@@ -1070,20 +1070,12 @@ const poemModalBody = document.getElementById("poemModalBody");
 const poemModalContent = document.querySelector(".poem-modal__content");
 
 function resetPoemScroll() {
+  const scrollWrapper = document.querySelector(".poem-modal__body-wrapper");
+  if (scrollWrapper) {
+    scrollWrapper.scrollTop = 0;
+  }
   if (poemModalContent) {
     poemModalContent.scrollTop = 0;
-    poemModalContent.scrollLeft = 0;
-    if (typeof poemModalContent.scrollTo === "function") {
-      poemModalContent.scrollTo(0, 0);
-    }
-  }
-  if (poemModalBody) {
-    poemModalBody.scrollTop = 0;
-    poemModalBody.scrollLeft = 0;
-  }
-  if (poemModal) {
-    poemModal.scrollTop = 0;
-    poemModal.scrollLeft = 0;
   }
 }
 
