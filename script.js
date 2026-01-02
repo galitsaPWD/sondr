@@ -457,7 +457,7 @@ reaching for anyone who bothered to look.
 but beauty gets lonely
 when it isn't the one you're searching for.
 and somewhere along the way,
-i realized I wasn't looking for a garden at all—
+i realized i wasn't looking for a garden at all—
 
 just a single tulip,
 quiet and sure in its own softness.
@@ -600,8 +600,8 @@ in every corner of who you are.`,
     id: "burnt-cigarette",
     title: "burnt cigarette",
     meta: "devotion | intensity",
-    firstLine: "i know what I'm holding between my fingers might be the end of me —",
-    body: `i know what I'm holding between my fingers
+    firstLine: "i know what i'm holding between my fingers might be the end of me —",
+    body: `i know what i'm holding between my fingers
 might be the end of me —
 but some endings are worth the smoke.
 
@@ -1045,6 +1045,188 @@ i miss her,
 in everything.
 everywhere.
 all the time.`,
+  },
+  {
+    id: "to-the-world",
+    title: "whispered world",
+    meta: "confession | world",
+    firstLine: "if i was ever asked to shout to the world how much i love you —",
+    body: `if i was ever asked to shout
+to the world how much i love you —
+
+i’d whisper it in your ear.
+
+because you’re my world.
+
+this is one of those cheesy lines
+i don’t know if you’d like.
+but given the circumstances,
+maybe it’s true.
+
+you’ve become part of my world
+in ways you don’t even realize.
+
+in the small things i notice,
+i think of you —
+wondering if you’d like this
+if you were here.
+
+my eyes struggle in a sea of faces,
+always searching for yours,
+hoping to catch a glimpse
+just to smile and move on.
+
+and in the middle of random days
+i find myself thinking of you,
+daydreaming about things
+i hope we’ll get to do.
+
+maybe i’m right.
+
+you’re my world now —
+not because you’re mine,
+but because you exist beside me.
+
+and even if you never are,
+i’m still glad
+to be in the same earth as you.`,
+  },
+  {
+    id: "words-wont-come-out",
+    title: "rattled",
+    meta: "pain | unrequited",
+    firstLine: "i don't know what to say, words won't come out of my mouth.",
+    body: `i don't know what to say,
+words won't come out of my mouth.
+i know we're not together
+but why do i feel weird when you're around him.
+
+i know i shouldn't be this way
+i should be happy as your friend.
+im trying.
+i try.
+
+but all comes to naught
+my brain puzzled —
+my heart rattled.
+
+this is the type of feeling 
+that i don't know what to do.
+i hate this
+but i dont hate you.
+
+i actually hate myself,
+for being like this.
+
+but is it wrong?
+when all i know —
+is just to love.
+with all my heart.
+
+is it a sin?
+knowing i will get hurt by this.
+i love you but i know 
+you won't turn your back for me.
+
+i hate myself for needing love
+that me myself don't even know what to give.
+maybe in another time,
+another life,
+in another ways.
+
+i wont be your second best.`,
+  },
+  {
+    id: "courtesy-of-time",
+    title: "courtesy of time",
+    meta: "stillness | presence",
+    firstLine: "the room has learned how to hold its breath.",
+    body: `the room has learned how to hold its breath.
+no words drifting between us,
+no future trying to introduce itself.
+just the soft agreement of presence,
+unspoken, unclaimed.
+
+earlier, my body was restless—
+fear moving faster than thought,
+an ache with no direction.
+now it’s still,
+as if it remembered how to be human again.
+
+nothing shifted in the grand sense.
+no turning point. no revelation.
+only time slowing down
+out of courtesy.
+
+i used to think moments needed meaning
+to be worth keeping.
+tonight asks for nothing.
+
+and somehow,
+that’s enough.`,
+  },
+  {
+    id: "i-still-adore-you",
+    title: "from the sidelines",
+    meta: "acceptance | adoration",
+    firstLine: "your wont probably believe me but — i still adore you,",
+    body: `your wont probably believe me
+but —
+i still adore you,
+even though it hurts.
+
+i don't regret it in any way,
+im actually glad its you.
+
+you made me do things
+that's seemed impossible to me before.
+you changed me in little ways,
+i didn't even noticed.
+
+you're always a something,
+a someone —
+that i'll hold on dearly,
+even i can't have for myself.
+
+a part of you will always live
+with in me.
+
+you don't know how much you mean
+to me just by existing.
+thank you for giving me the courage,
+to try the things im scared of.
+
+i want to see you win,
+in every dreams that you have.
+but most of all —
+i hope you heal from the things
+you can't talk about.
+
+and also do things that you love,
+things that makes you happy.
+
+laugh,
+cry,
+get angry,
+for that is you.
+
+remember —
+you're not too much,
+they just don't understand.
+so don't ever lower yourself,
+for anyone.
+
+i hope your destiny
+brings you great joy,
+even if i'm not a part of it.
+
+but i'll always be here,
+just on the sides.
+like i always do,
+just like i told you.
+
+thank you, 
+isha.`,
   },
 ];
 
